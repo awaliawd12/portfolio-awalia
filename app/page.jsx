@@ -153,16 +153,6 @@ export default function Home() {
       ]
     },
     {
-      title: "Smart Waste Detection",
-      description: "System pendeteksi dan pengklasifikasi sampah secara real-time menggunakan model AI YOLOv8.",
-      tags: ["AI", "YOLOv8", "Python"],
-      theme: { bg: "bg-amber-100", border: "border-amber-200" },
-      images: ["smartwaste1.png", "smartwaste2.png"],
-      links: [
-        { label: "GitHub Source Code", url: "https://github.com/awaliawd12/smartwaste.git", type: "github" }
-      ]
-    },
-    {
       title: "ZA&HI Beauty Care",
       description: "Website Profil Salon. Perancangan antarmuka pengguna interaktif dan responsif untuk salon kecantikan.",
       tags: ["Web Dev", "PHP Laravel", "MySQL", "Tailwind CSS", "Figma"],
@@ -171,27 +161,6 @@ export default function Home() {
       links: [
         { label: "Figma Design", url: "https://www.figma.com/design/1FJygeWSXqhqprXrw16XLY/wireframe?node-id=0-1&t=2kfjWJQrzuEBFfMJ-1", type: "figma" },
         { label: "GitHub Source Code", url: "https://github.com/nevaaintina/Za-Hi-Beauty-Care.git", type: "github" }
-      ]
-    },
-    {
-      title: "Find Your Beauty",
-      description: "Website Rekomendasi dan Review Skincare. Platform kurasi produk perawatan kulit yang terstruktur.",
-      tags: ["Web Dev", "Tailwind CSS", "PHP", "MySQL", "Figma"],
-      theme: { bg: "bg-orange-100", border: "border-orange-200" },
-      images: ["findyourbeauty1.png", "findyourbeauty2.png", "findyourbeauty3.png", "findyourbeauty4.png"],
-      links: [
-        { label: "Figma Design", url: "https://www.figma.com/design/psM1HzH5RTjlUVO81JZCNK/Wireframe?node-id=0-1&t=H9aJRUnaQPVth6tp-1", type: "figma" },
-        { label: "GitHub Source Code", url: "https://github.com/awaliawd12/find-your-beauty.git", type: "github" }
-      ]
-    },
-    {
-      title: "School Academic Info System",
-      description: "Pengembangan sistem informasi akademik berbasis aplikasi mobile untuk menunjang manajemen sekolah.",
-      tags: ["Mobile App", "Flutter", "Dart", "Firebase"],
-      theme: { bg: "bg-blue-100", border: "border-blue-200" },
-      images: ["school1.png", "school2.png"],
-      links: [
-        { label: "GitHub Source Code", url: "https://github.com/Rafadi999/uasmobilekel4.git", type: "github" }
       ]
     },
     {
@@ -209,11 +178,42 @@ export default function Home() {
       title: "Telephone Directory App",
       description: "Website manajemen direktori telepon. Dilengkapi dengan fitur pencarian, filter, dan paginasi.",
       tags: ["Web Dev", "Javascript", "Next.js", "Spreadsheets"],
-      theme: { bg: "bg-purple-100", border: "border-purple-200", span: true },
+      theme: { bg: "bg-purple-100", border: "border-purple-200" },
       images: ["directory1.png", "directory2.png"],
       links: [
         { label: "GitHub Source Code", url: "https://github.com/awaliawd12/phonebook-sht.git", type: "github" },
         { label: "Website", url: "https://phonebook-sht.vercel.app/", type: "live" }
+      ]
+    },
+    {
+      title: "Smart Waste Detection",
+      description: "System pendeteksi dan pengklasifikasi sampah secara real-time menggunakan model AI YOLOv8.",
+      tags: ["AI", "YOLOv8", "Python", "HTML", "CSS"],
+      theme: { bg: "bg-amber-100", border: "border-amber-200" },
+      images: ["smartwaste1.png", "smartwaste2.png"],
+      links: [
+        { label: "GitHub Source Code", url: "https://github.com/awaliawd12/smartwaste.git", type: "github" }
+      ]
+    },
+    {
+      title: "Find Your Beauty",
+      description: "Website Rekomendasi dan Review Skincare. Platform kurasi produk perawatan kulit yang terstruktur.",
+      tags: ["Web Dev", "Tailwind CSS", "PHP", "MySQL", "Figma"],
+      theme: { bg: "bg-orange-100", border: "border-orange-200" },
+      images: ["findyourbeauty1.png", "findyourbeauty2.png", "findyourbeauty3.png", "findyourbeauty4.png"],
+      links: [
+        { label: "Figma Design", url: "https://www.figma.com/design/psM1HzH5RTjlUVO81JZCNK/Wireframe?node-id=0-1&t=H9aJRUnaQPVth6tp-1", type: "figma" },
+        { label: "GitHub Source Code", url: "https://github.com/awaliawd12/find-your-beauty.git", type: "github" }
+      ]
+    },
+    {
+      title: "School Academic Info System",
+      description: "Pengembangan sistem informasi akademik berbasis aplikasi mobile untuk menunjang manajemen sekolah.",
+      tags: ["Mobile App", "Flutter", "Dart", "Firebase"],
+      theme: { bg: "bg-blue-100", border: "border-blue-200", span: true },
+      images: ["school1.png", "school2.png"],
+      links: [
+        { label: "GitHub Source Code", url: "https://github.com/Rafadi999/uasmobilekel4.git", type: "github" }
       ]
     }
   ];
@@ -254,7 +254,7 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-100 z-50 py-4 transition-all">
         <nav className="container mx-auto px-6 flex justify-between items-center max-w-5xl">
           <Link href="#hero" className="text-3xl font-serif font-style: italic text-pink-500 tracking-wider">
-            Awalia Wahyu.
+            Portfolio.
           </Link>
           <ul className="hidden md:flex space-x-6 text-xs uppercase tracking-widest font-semibold text-slate-500">
             <li><Link href="#about" className="hover:text-pink-400 transition-colors">About</Link></li>
@@ -269,35 +269,34 @@ export default function Home() {
 
       <main className="container mx-auto px-4 pt-28 pb-12 max-w-5xl">
         
-        {/* HERO SECTION */}
+        {/* HERO SECTION (RESPONSIF FLEXBOX) */}
         <section id="hero" className="py-12 flex flex-col md:flex-row items-center gap-10">
-          <div className="flex-1">
-            <h1 className="text-5xl md:text-6xl font-serif text-slate-800 leading-tight mb-6">
-              Transforming <span className="text-pink-400 italic">needs</span> into <br />
+          <div className="flex-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl font-serif text-slate-800 leading-tight mb-6">
+              Transforming <span className="text-pink-400 italic">needs</span> into <br className="hidden md:block"/>
               functional digital solutions
             </h1>
             <div className="inline-block px-5 py-2 bg-pink-400 text-white rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-sm">
               ♡ D3 IT STUDENT & DEVELOPER
             </div>
-            <p className="text-slate-500 leading-relaxed max-w-md text-sm md:text-base">
+            <p className="text-slate-500 leading-relaxed max-w-md mx-auto md:mx-0 text-sm md:text-base">
               Hello, I am Awalia Wahyu Destiana. I am a Diploma in Information Technology student at the Faculty of Vocational Studies, Brawijaya University.
             </p>
           </div>
           
-          <div className="flex-1 relative w-full h-[300px] md:h-[400px] flex justify-center items-center">
-            <div className="absolute w-64 h-64 bg-pink-100 rounded-full blur-3xl opacity-50"></div>
-            <div className="absolute w-48 h-64 bg-emerald-100 rounded-[3rem] rotate-6 border border-emerald-200 shadow-sm"></div>
-            <div className="absolute w-48 h-64 bg-white rounded-[3rem] -rotate-3 border-2 border-dashed border-pink-300 flex items-center justify-center p-2 shadow-xl overflow-hidden">
+          <div className="flex-1 w-full flex justify-center items-center relative my-6 md:my-0">
+            <div className="absolute w-56 h-56 md:w-64 md:h-64 bg-pink-100 rounded-full blur-3xl opacity-50"></div>
+            <div className="relative w-48 h-64 bg-white rounded-[3rem] -rotate-3 border-2 border-dashed border-pink-300 flex items-center justify-center p-2 shadow-xl overflow-hidden">
                <AutoSlideShow images={heroPhotos} containerStyle="w-full h-full rounded-[2.5rem]" />
+               <div className="absolute top-4 right-4 text-2xl pointer-events-none">🌸</div>
+               <div className="absolute bottom-4 left-4 text-2xl pointer-events-none">✨</div>
             </div>
-            <div className="absolute top-10 right-10 text-4xl hover:scale-110 transition-transform cursor-default">🌸</div>
-            <div className="absolute bottom-10 left-10 text-4xl hover:scale-110 transition-transform cursor-default">✨</div>
           </div>
         </section>
 
         {/* STATS STRIP */}
         <section className="py-8 border-y border-pink-100 my-8">
-          <div className="flex justify-around items-center text-center">
+          <div className="grid grid-cols-2 md:flex md:justify-around items-center text-center gap-6 md:gap-0">
             <div>
               <h3 className="text-3xl font-serif text-slate-700">Sem 5</h3>
               <p className="text-xs uppercase tracking-widest text-slate-400 mt-1">Status Studi</p>
@@ -327,11 +326,11 @@ export default function Home() {
                <span className="font-serif italic text-slate-500 text-sm mt-3">Awalia Wahyu Destiana ☕✨</span>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 text-center md:text-left">
             <div className="inline-block px-4 py-1 bg-pink-200 text-pink-700 rounded-full text-xs font-bold uppercase mb-4">
               ♡ About Me ♡
             </div>
-            <h2 className="text-4xl font-serif text-slate-800 leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-serif text-slate-800 leading-tight mb-6">
               Passionate about <span className="text-emerald-500 italic">system analysis</span> and application development.
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -340,7 +339,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm leading-relaxed mb-6">
               This portfolio highlights my projects in web development, system design, and Artificial Intelligence implementation.
             </p>
-            <div className="flex gap-4 border-t border-pink-200 pt-6">
+            <div className="flex justify-center md:justify-start gap-4 border-t border-pink-200 pt-6">
               <span className="text-xs font-bold text-slate-400 tracking-widest">♡ ANALYSIS</span>
               <span className="text-xs font-bold text-slate-400 tracking-widest">♡ CODE</span>
               <span className="text-xs font-bold text-slate-400 tracking-widest">♡ DESIGN</span>
@@ -353,14 +352,14 @@ export default function Home() {
           <h2 className="text-2xl font-serif italic text-blue-500 mb-8 text-center">
             ✦ Education ✦
           </h2>
-          <div className="bg-white p-8 md:p-12 rounded-[3rem] border border-blue-100 shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+          <div className="bg-white p-6 md:p-12 rounded-[3rem] border border-blue-100 shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
              <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-50 rounded-full blur-2xl z-0"></div>
              
-             <div className="w-32 h-32 bg-blue-50 rounded-[2rem] border-2 border-blue-200 flex items-center justify-center flex-shrink-0 rotate-3 hover:rotate-0 transition-transform z-10 overflow-hidden p-3">
+             <div className="w-28 h-28 md:w-32 md:h-32 bg-blue-50 rounded-[2rem] border-2 border-blue-200 flex items-center justify-center flex-shrink-0 rotate-3 hover:rotate-0 transition-transform z-10 overflow-hidden p-3">
                 <img src="/logo ub.jpg" alt="Universitas Brawijaya" className="w-full h-full object-contain" />
              </div>
 
-             <div className="text-center md:text-left z-10">
+             <div className="text-center md:text-left z-10 w-full">
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-3">
                   <span className="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-[10px] font-bold uppercase tracking-widest">
                     Current Student
@@ -371,7 +370,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-slate-800 mb-1">Universitas Brawijaya</h3>
                 <p className="text-lg font-serif italic text-blue-600 mb-3">Fakultas Vokasi - D3 Teknologi Informasi</p>
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Mahasiswa semester 5 Vokasi Teknologi Informasi Universitas Brawijaya. Memiliki fondasi akademik yang komprehensif di bidang 
                   pengembangan perangkat lunak (Web, Mobile, Framework), manajemen basis data, manajemen proyek, serta sistem cerdas berbasis IoT dan AI.
                 </p>
@@ -384,24 +383,24 @@ export default function Home() {
           <h2 className="text-2xl font-serif italic text-purple-500 mb-8 text-center">
             ✦ Experience ✦
           </h2>
-          <div className="bg-white p-8 md:p-10 rounded-[3rem] border border-purple-100 shadow-sm max-w-4xl mx-auto relative overflow-hidden">
+          <div className="bg-white p-6 md:p-10 rounded-[3rem] border border-purple-100 shadow-sm max-w-4xl mx-auto relative overflow-hidden">
              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-50 rounded-full blur-2xl z-0"></div>
              
              <div className="relative z-10 flex flex-col md:flex-row gap-6 items-start md:items-center bg-[#fdfbf7] p-6 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                 
-                <div className="w-24 h-24 bg-purple-50 rounded-2xl border-2 border-purple-200 flex items-center justify-center flex-shrink-0 -rotate-3 hover:rotate-0 transition-transform overflow-hidden p-3">
+                <div className="w-24 h-24 bg-purple-50 rounded-2xl border-2 border-purple-200 flex items-center justify-center flex-shrink-0 -rotate-3 hover:rotate-0 transition-transform overflow-hidden p-3 mx-auto md:mx-0">
                    <img src="/logo ip.png" alt="PLN Indonesia Power" className="w-full h-full object-contain" />
                 </div>
 
-                <div className="flex-1 w-full">
+                <div className="flex-1 w-full text-center md:text-left">
                    <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-2">
                      <h3 className="text-xl font-bold text-slate-800">Information Technology Intern</h3>
-                     <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest w-fit">
+                     <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest w-fit mx-auto md:mx-0">
                        Juli - September 2026
                      </span>
                    </div>
                    <p className="text-md font-serif italic text-purple-600 mb-3">Divisi Sistem Informasi — PLN Indonesia Power UBP Mrica</p>
-                   <ul className="space-y-2 text-slate-600 text-sm">
+                   <ul className="space-y-2 text-slate-600 text-sm text-left">
                      <li className="flex gap-3 items-start">
                        <span className="text-purple-400 font-bold">✦</span> 
                        <span>Merancang dan mengembangkan platform website <strong>Powercycle</strong> untuk digitalisasi manajemen operasional bank sampah menggunakan React, Next.js, dan Firebase.</span>
@@ -528,7 +527,7 @@ export default function Home() {
 
         {/* CONTACT SECTION */}
         <section id="contact" className="py-16">
-          <div className="bg-white p-12 rounded-[3rem] border-2 border-dashed border-emerald-200 shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center">
+          <div className="bg-white p-8 md:p-12 rounded-[3rem] border-2 border-dashed border-emerald-200 shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center">
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-4xl font-serif italic text-slate-800 mb-4">
                 ✦ Get In Touch ✦
@@ -578,7 +577,7 @@ export default function Home() {
 
       {/* Footer Bottom */}
       <footer className="w-full bg-pink-100/50 py-8 text-center mt-8">
-        <h2 className="text-2xl font-serif text-pink-400 mb-2">Awalia Wahyu.</h2>
+        <h2 className="text-2xl font-serif text-pink-400 mb-2">Awalia Wahyu Destiana</h2>
         <p className="text-xs text-slate-400 uppercase tracking-widest">
           Terus belajar, berkarya, dan bertumbuh · © {new Date().getFullYear()}
         </p>
