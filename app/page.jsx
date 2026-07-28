@@ -135,7 +135,7 @@ const ProjectCard = ({ title, description, category, images, tags, links, theme 
 
 export default function Home() {
   
-  const heroPhotos = ["/profil.jpeg", "/me1.jpeg"]; 
+  const heroPhotos = ["/profil.png"]; 
   const aboutPhotos = ["/me1.jpeg", "/me2.jpeg"]; 
   const eduPhotos = ["/logo ub.jpg"]; 
   const expPhotos = ["/logo ip.png"]; 
