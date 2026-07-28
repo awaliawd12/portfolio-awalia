@@ -167,7 +167,7 @@ export default function Home() {
       description: "Website Profil Salon. Perancangan antarmuka pengguna interaktif dan responsif untuk salon kecantikan.",
       tags: ["Web Dev", "PHP Laravel", "MySQL", "Tailwind CSS", "Figma"],
       theme: { bg: "bg-pink-100", border: "border-pink-200" },
-      images: ["zahi1.png", "zahi2.png"],
+      images: ["zahi1.png", "zahi2.png", "zahi3.png"],
       links: [
         { label: "Figma Design", url: "https://www.figma.com/design/1FJygeWSXqhqprXrw16XLY/wireframe?node-id=0-1&t=2kfjWJQrzuEBFfMJ-1", type: "figma" },
         { label: "GitHub Source Code", url: "https://github.com/nevaaintina/Za-Hi-Beauty-Care.git", type: "github" }
@@ -191,7 +191,6 @@ export default function Home() {
       theme: { bg: "bg-blue-100", border: "border-blue-200" },
       images: ["school1.png", "school2.png"],
       links: [
-        { label: "Figma Design", url: "#", type: "figma" },
         { label: "GitHub Source Code", url: "https://github.com/Rafadi999/uasmobilekel4.git", type: "github" }
       ]
     },
