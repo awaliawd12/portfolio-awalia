@@ -567,7 +567,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest font-bold text-slate-400 mb-1">LinkedIn</p>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="font-serif text-slate-800 hover:text-emerald-500 underline decoration-emerald-300">awaliawd</a>
+                  <a href="www.linkedin.com/in/awaliawd" target="_blank" rel="noopener noreferrer" className="font-serif text-slate-800 hover:text-emerald-500 underline decoration-emerald-300">awaliawd</a>
                 </div>
               </div>
             </div>
