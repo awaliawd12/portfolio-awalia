@@ -170,8 +170,8 @@ export default function Home() {
       theme: { bg: "bg-emerald-100", border: "border-emerald-200" },
       images: ["powercycle1.png", "powercycle2.png", "powercycle3.png"],
       links: [
-        { label: "GitHub Source Code", url: "#", type: "github" },
-        { label: "Live Website", url: "#", type: "live" }
+        { label: "GitHub Source Code", url: "https://github.com/Quazy05/powercycle-web-utama.git", type: "github" },
+        { label: "Website", url: "https://powercycle-web-validator.vercel.app/", type: "live" }
       ]
     },
     {
@@ -192,7 +192,8 @@ export default function Home() {
       theme: { bg: "bg-amber-100", border: "border-amber-200" },
       images: ["smartwaste1.png", "smartwaste2.png"],
       links: [
-        { label: "GitHub Source Code", url: "https://github.com/awaliawd12/smartwaste.git", type: "github" }
+        { label: "GitHub Source Code", url: "https://github.com/awaliawd12/smartwaste.git", type: "github" },
+         { label: "Website", url: "https://smartwaste-pi.vercel.app/", type: "live" }
       ]
     },
     {
